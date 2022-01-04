@@ -79,10 +79,21 @@ WSGI_APPLICATION = 'django_forum.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': BASE_DIR / 'db.sqlite3',
+#     }
+# }
+
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'd1unaaocfd4mqm',
+        'USER': 'ezicsuiqrsnwia',
+        'HOST': 'ec2-54-167-168-52.compute-1.amazonaws.com',
+        'PORT': 5432,
+        'PASSWORD': '247f1234c1204f756c19fe84f898390c493a4a7c130c813068372cb00543bf3c',
     }
 }
 
@@ -145,9 +156,9 @@ STATICFILES_DIRS = (
 )
 
 cloudinary.config(
-    cloud_name="www-techis-io",
-    api_key="891747999686865",
-    api_secret="seWq_dLQRcb7O5eMY-XdAuznU_w",
+    cloud_name="dnzcxphxl",
+    api_key="227674966312587",
+    api_secret="f8-ZJ1UP04yAgpmuD4zo5EUFPq0",
     secure=True
 )
 
@@ -156,3 +167,4 @@ cloudinary.config(
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
