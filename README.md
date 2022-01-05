@@ -6,7 +6,7 @@ To make the project simple, we do not have a sign/login function.
 So there are not user accounts and follow function. You can challenge after you finish the course.
 ```
 
-Check out [LIVE DEMO]() here!!
+Check out [LIVE DEMO](https://twitter-caleb.herokuapp.com) here!!
 
 ## Tech used
 
